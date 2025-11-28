@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>📝 Mi Lista de Tareas</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." autocomplete="off">
+            <button id="addBtn">Agregar</button>
+        </div>
+
+        <!-- Filters Section -->
+
+        <div class="filters">
+            <button class="filter-btn active" id="all">Todas</button>
+            <button class="filter-btn" id="pending">Pendientes</button>
+            <button class="filter-btn" id="completed">Completadas</button>
+        </div>
+
+        <!-- Tareas Section -->
+        <ul id="taskList" class="task-list">
+        </ul>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="pendingTasks">Pendientes: 0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
